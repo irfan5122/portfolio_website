@@ -1,7 +1,7 @@
 # 🌐 Personal Portfolio Website
 
 [![Deploy](https://github.com/irfan5122/portfolio_website/actions/workflows/firebase-hosting-merge.yml/badge.svg)](https://github.com/irfan5122/portfolio_website/actions)
-[![Firebase Hosting](https://img.shields.io/badge/Firebase-Hosting-orange)](https://portfolio-website.web.app)
+[![Firebase Hosting](https://img.shields.io/badge/Firebase-Hosting-orange)](https://irfan-builds.web.app)
 
 This repository contains the source code for my personal portfolio website.  
 It showcases my projects, skills, and experience, and provides a simple way to get in touch with me.
@@ -47,3 +47,21 @@ This website is **automatically deployed** using:
 
 ## 📂 Project Structure
 
+```
+public/
+│── index.html
+│── img/
+│   ├── irfan.JPG
+│   ├── task_automation.png
+│   ├── moviedb.png
+│   ├── whatsapp.png
+│── src/
+│   └── my_resume_irf.pdf
+.github/
+│── workflows/
+│   ├── firebase-hosting-merge.yml
+│   └── firebase-hosting-pull-request.yml
+firebase.json
+.firebaserc
+storage.rules
+```
