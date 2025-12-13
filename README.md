@@ -1,20 +1,23 @@
 # 🌐 Personal Portfolio Website
 
-This repository contains the source code for my personal portfolio website.  
-It showcases my projects, skills, and experience, and provides an easy way to get in touch with me.
+[![Deploy](https://github.com/irfan5122/portfolio_website/actions/workflows/firebase-hosting-merge.yml/badge.svg)](https://github.com/irfan5122/portfolio_website/actions)
+[![Firebase Hosting](https://img.shields.io/badge/Firebase-Hosting-orange)](https://portfolio-website.web.app)
 
-The website is fully responsive, lightweight, and automatically deployed using a CI/CD pipeline.
+This repository contains the source code for my personal portfolio website.  
+It showcases my projects, skills, and experience, and provides a simple way to get in touch with me.
+
+The website is lightweight, fully responsive, and automatically deployed using a modern CI/CD workflow.
 
 ---
 
 ## ✨ Features
 
-- Modern, minimal, and responsive design  
-- Sections for About, Projects, Skills, and Contact  
+- Clean, modern, and responsive UI  
+- About, Projects, Skills, and Contact sections  
 - Downloadable resume  
 - Contact form integration  
 - Social media links (GitHub, LinkedIn, Instagram, Email)  
-- Smooth animations and clean UI  
+- Smooth animations and polished layout  
 
 ---
 
@@ -23,7 +26,7 @@ The website is fully responsive, lightweight, and automatically deployed using a
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **Font Awesome** (icons)
+- **Font Awesome**
 
 ---
 
@@ -31,13 +34,14 @@ The website is fully responsive, lightweight, and automatically deployed using a
 
 This website is **automatically deployed** using:
 
-- **GitHub Actions** – CI/CD pipeline  
-- **Firebase Hosting** – fast global hosting with SSL  
+- **GitHub Actions** (CI/CD)
+- **Firebase Hosting** (global CDN + SSL)
 
-### How it works:
+### How it works
+
 - Every push to the `main` branch triggers GitHub Actions  
-- The site is built (if required) and deployed to Firebase Hosting  
-- No manual deployment needed  
+- The site is deployed automatically to Firebase Hosting  
+- No manual deployment commands required  
 
 ---
 
