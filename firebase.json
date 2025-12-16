@@ -7,10 +7,12 @@
       "**/node_modules/**"
     ],
     "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
+      { "source": "/python", "destination": "/python_info.html" },
+      { "source": "/c", "destination": "/c_info.html" },
+      { "source": "/java", "destination": "/java_info.html" },
+      { "source": "/html5", "destination": "/html5_info.html" },
+      { "source": "/blender", "destination": "/blender_info.html" },
+      { "source": "/git", "destination": "/git_info.html" }
     ]
   },
   "storage": {
