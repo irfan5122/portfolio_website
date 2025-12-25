@@ -1,72 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   
-  <meta charset="UTF-8">
 
-  <!-- Google Search Console Verification -->
-  <meta name="google-site-verification" content="1Hpd7QzptWAZy6CB7yFOjFchpL6R4VtDxOXcrWMKMFo" />
+    <meta charset="UTF-8">
 
-  <!-- Responsive -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="1Hpd7QzptWAZy6CB7yFOjFchpL6R4VtDxOXcrWMKMFo" />
 
-  <!-- Primary SEO Title -->
-  <title>Ahmed Irfan N | Python Developer & Automation Engineer</title>
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO Description -->
-  <meta name="description"
+    <!-- Primary SEO Title -->
+    <title>Ahmed Irfan N | Python Developer & Automation Engineer</title>
+
+    <!-- SEO Description -->
+    <meta name="description"
         content="Portfolio of Ahmed Irfan N, a Python developer and automation engineer specializing in GUI applications, automation tools, web scraping, and AI-powered software. Explore projects, skills, and contact details." />
 
-  <!-- Optional Keywords -->
-  <meta name="keywords"
+    <!-- Optional Keywords -->
+    <meta name="keywords"
         content="Ahmed Irfan N, Python developer, automation engineer, PyQt, Selenium, GUI applications, web scraping, AI tools, software developer portfolio" />
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://irfan-builds.web.app/" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://irfan-builds.web.app/" />
 
-  <!-- Open Graph (LinkedIn / WhatsApp Preview) -->
-  <meta property="og:type" content="website">
-  <meta property="og:title"
-        content="Ahmed Irfan N | Python Developer & Automation Engineer">
-  <meta property="og:description"
+    <!-- Open Graph (LinkedIn / WhatsApp Preview) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ahmed Irfan N | Python Developer & Automation Engineer">
+    <meta property="og:description"
         content="Python developer specializing in GUI applications, automation, web scraping, and AI-powered tools. View projects and get in touch.">
-  <meta property="og:url" content="https://irfan-builds.web.app/">
-  <meta property="og:image"
-        content="https://irfan-builds.web.app/img/irfan.JPG">
+    <meta property="og:url" content="https://irfan-builds.web.app/">
+    <meta property="og:image" content="https://irfan-builds.web.app/img/irfan.JPG">
 
 
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <style>
         /* * 1. CSS VARIABLES & RESET 
          */
         :root {
-            /* Palette - Easy to customize */
+            /* Light Mode Palette */
             --bg-color: #fafafa;
             --surface-color: #ffffff;
             --text-primary: #1a1a1a;
             --text-secondary: #666666;
-            --accent-color: #2563eb; /* Royal Blue */
-            --accent-hover: #1d4ed8;
             --border-color: #e5e5e5;
-            
+
+            /* Vibrant Gradient Accents */
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --accent-color: #667eea;
+            --accent-hover: #764ba2;
+
+            /* Glassmorphism */
+            --glass-bg: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.18);
+            --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+
             /* Spacing & Sizing */
             --nav-height: 80px;
             --container-width: 1200px;
             --radius-md: 12px;
             --radius-lg: 24px;
-            
+
             /* Shadows */
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
-            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
-            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.05), 0 4px 6px -2px rgba(0,0,0,0.02);
-            
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+            --shadow-glow: 0 0 30px rgba(102, 126, 234, 0.3);
+
             /* Transitions */
             --transition-fast: 0.2s ease;
             --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Dark Mode Palette */
+        [data-theme="dark"] {
+            --bg-color: #0f0f0f;
+            --surface-color: #1a1a1a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border-color: #2a2a2a;
+
+            --glass-bg: rgba(26, 26, 26, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+            --shadow-glow: 0 0 30px rgba(102, 126, 234, 0.5);
+        }
+
+        /* Smooth theme transition */
+        * {
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
         }
 
         * {
@@ -115,23 +147,44 @@
             justify-content: center;
             padding: 0.875rem 2rem;
             font-weight: 500;
-            border-radius: 50px; /* Pill shape */
-            transition: var(--transition-fast);
+            border-radius: 50px;
+            transition: all var(--transition-smooth);
             cursor: pointer;
             font-size: 1rem;
             gap: 0.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn:hover::before {
+            width: 300px;
+            height: 300px;
         }
 
         .btn-primary {
-            background-color: var(--text-primary);
+            background: var(--gradient-primary);
             color: white;
-            border: 2px solid var(--text-primary);
+            border: 2px solid transparent;
+            box-shadow: var(--shadow-md);
         }
 
         .btn-primary:hover {
-            background-color: transparent;
-            color: var(--text-primary);
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-glow);
+            animation: pulse 1.5s infinite;
         }
 
         .btn-outline {
@@ -141,9 +194,23 @@
         }
 
         .btn-outline:hover {
-            border-color: var(--text-primary);
-            background-color: var(--text-primary);
+            border-color: var(--accent-color);
+            background: var(--gradient-primary);
             color: white;
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                box-shadow: var(--shadow-glow);
+            }
+
+            50% {
+                box-shadow: 0 0 40px rgba(102, 126, 234, 0.5);
+            }
         }
 
         .section-title {
@@ -175,11 +242,13 @@
             left: 0;
             width: 100%;
             height: var(--nav-height);
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
             z-index: 1000;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--glass-border);
             transition: var(--transition-fast);
+            box-shadow: var(--shadow-sm);
         }
 
         .nav-container {
@@ -193,6 +262,33 @@
             font-size: 1.5rem;
             font-weight: 700;
             letter-spacing: -0.03em;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Dark Mode Toggle */
+        .theme-toggle {
+            background: transparent;
+            border: 2px solid var(--border-color);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            margin-left: 1rem;
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--accent-color);
+            transform: rotate(20deg) scale(1.1);
+            box-shadow: var(--shadow-glow);
         }
 
         .nav-menu {
@@ -208,7 +304,8 @@
             position: relative;
         }
 
-        .nav-link:hover, .nav-link.active {
+        .nav-link:hover,
+        .nav-link.active {
             color: var(--text-primary);
         }
 
@@ -237,14 +334,51 @@
             padding-top: var(--nav-height);
             position: relative;
             overflow: hidden;
+            background: var(--bg-color);
+        }
+
+        /* Animated Gradient Background */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            opacity: 0.1;
+            filter: blur(80px);
+            animation: float 20s ease-in-out infinite;
+            z-index: 0;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 600px;
+            height: 600px;
+            background: var(--gradient-accent);
+            border-radius: 50%;
+            opacity: 0.1;
+            filter: blur(80px);
+            animation: float 15s ease-in-out infinite reverse;
+            z-index: 0;
         }
 
         .hero-content {
             max-width: 800px;
+            position: relative;
+            z-index: 1;
         }
 
         .hero-greeting {
-            color: var(--accent-color);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             font-weight: 600;
             margin-bottom: 1rem;
             display: block;
@@ -260,6 +394,10 @@
             margin-bottom: 1.5rem;
             opacity: 0;
             animation: fadeUp 0.8s 0.4s forwards;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-color) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .hero-description {
@@ -278,6 +416,23 @@
             animation: fadeUp 0.8s 0.8s forwards;
         }
 
+        /* Floating Animation */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            33% {
+                transform: translate(30px, -30px) rotate(5deg);
+            }
+
+            66% {
+                transform: translate(-20px, 20px) rotate(-5deg);
+            }
+        }
+
         /* * 5. ABOUT SECTION 
          */
         .about-grid {
@@ -293,7 +448,7 @@
             overflow: hidden;
             box-shadow: var(--shadow-lg);
         }
-        
+
         /* Placeholder styling for images */
         .placeholder-img {
             width: 100%;
@@ -327,17 +482,39 @@
         }
 
         .project-card {
-            background: var(--surface-color);
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             border-radius: var(--radius-md);
             overflow: hidden;
             box-shadow: var(--shadow-sm);
-            transition: var(--transition-smooth);
-            border: 1px solid var(--border-color);
+            transition: all var(--transition-smooth);
+            border: 1px solid var(--glass-border);
+            position: relative;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            z-index: 0;
         }
 
         .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: var(--glass-shadow);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+
+        .project-card:hover::before {
+            opacity: 0.03;
         }
 
         .project-img {
@@ -348,25 +525,52 @@
             overflow: hidden;
         }
 
+        .project-img::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-secondary);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            mix-blend-mode: overlay;
+        }
+
+        .project-card:hover .project-img::after {
+            opacity: 0.3;
+        }
+
         .project-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.5s ease;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .project-card:hover .project-img img {
-            transform: scale(1.05);
+            transform: scale(1.1) rotate(2deg);
         }
 
         .project-content {
             padding: 1.5rem;
+            position: relative;
+            z-index: 1;
         }
 
         .project-title {
             font-size: 1.25rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .project-card:hover .project-title {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .project-desc {
@@ -394,10 +598,25 @@
         .project-link {
             font-size: 0.9rem;
             font-weight: 600;
-            color: var(--accent-color);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             display: inline-flex;
             align-items: center;
             gap: 0.25rem;
+            transition: gap 0.3s ease;
+        }
+
+        .project-link:hover {
+            gap: 0.5rem;
+        }
+
+        .project-link i {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         /* * 7. SKILLS SECTION 
@@ -409,37 +628,68 @@
         }
 
         .skill-card {
-            background: var(--surface-color);
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             padding: 2rem 1rem;
             border-radius: var(--radius-md);
             text-align: center;
-            border: 1px solid var(--border-color);
-            transition: var(--transition-fast);
-
+            border: 1px solid var(--glass-border);
+            transition: all var(--transition-smooth);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
-            height: 160px; 
+            height: 160px;
+            position: relative;
+            overflow: hidden;
         }
 
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
 
         .skill-card:hover {
             border-color: var(--accent-color);
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-md);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: var(--glass-shadow);
+        }
+
+        .skill-card:hover::before {
+            opacity: 0.1;
         }
 
         .skill-icon {
             font-size: 2.5rem;
             color: var(--text-primary);
             margin-bottom: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .skill-card:hover .skill-icon {
+            transform: scale(1.2) rotate(5deg);
         }
 
         .skill-name {
             font-weight: 600;
             color: var(--text-secondary);
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s ease;
+        }
+
+        .skill-card:hover .skill-name {
+            color: var(--text-primary);
         }
 
         /* * 8. RESUME & CONTACT 
@@ -450,7 +700,8 @@
             text-align: center;
             padding: 5rem 1rem;
             border-radius: var(--radius-lg);
-            margin: 4rem 2rem; /* Margin for container look */
+            margin: 4rem 2rem;
+            /* Margin for container look */
         }
 
         .contact-container {
@@ -478,7 +729,8 @@
             font-size: 0.9rem;
         }
 
-        .form-input, .form-textarea {
+        .form-input,
+        .form-textarea {
             width: 100%;
             padding: 0.875rem;
             border: 1px solid var(--border-color);
@@ -489,7 +741,8 @@
             background: #fafafa;
         }
 
-        .form-input:focus, .form-textarea:focus {
+        .form-input:focus,
+        .form-textarea:focus {
             outline: none;
             border-color: var(--text-primary);
             background: white;
@@ -505,12 +758,22 @@
         .social-link {
             font-size: 1.5rem;
             color: var(--text-secondary);
-            transition: var(--transition-fast);
+            transition: all var(--transition-smooth);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
         }
 
         .social-link:hover {
-            color: var(--text-primary);
-            transform: scale(1.1);
+            background: var(--gradient-primary);
+            color: white;
+            transform: scale(1.15) rotate(360deg);
+            box-shadow: var(--shadow-glow);
         }
 
         footer {
@@ -529,6 +792,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -553,6 +817,7 @@
             .about-grid {
                 grid-template-columns: 1fr;
             }
+
             .hero-title {
                 font-size: 3.5rem;
             }
@@ -567,9 +832,11 @@
             .hamburger.active .bar:nth-child(2) {
                 opacity: 0;
             }
+
             .hamburger.active .bar:nth-child(1) {
                 transform: translateY(7px) rotate(45deg);
             }
+
             .hamburger.active .bar:nth-child(3) {
                 transform: translateY(-7px) rotate(-45deg);
             }
@@ -599,11 +866,11 @@
             .nav-link {
                 font-size: 1.5rem;
             }
-            
+
             .hero-btns {
                 flex-direction: column;
             }
-            
+
             .cta-section {
                 margin: 4rem 1rem;
                 padding: 3rem 1rem;
@@ -611,13 +878,14 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- NAVIGATION -->
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">Irfan.</a>
-            
+
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
@@ -626,10 +894,15 @@
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
 
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div style="display: flex; align-items: center;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -641,7 +914,8 @@
                 <span class="hero-greeting">Hello, I'm</span>
                 <h1 class="hero-title">Ahmed Irfan N.<br>Creative Developer.</h1>
                 <p class="hero-description">
-                    I’m Irfan — a creative and hands-on software developer who builds polished GUI applications, automation tools, and experimental systems powered by Python and AI.   
+                    I’m Irfan — a creative and hands-on software developer who builds polished GUI applications,
+                    automation tools, and experimental systems powered by Python and AI.
                 </p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -656,23 +930,30 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <p class="section-subtitle">Get to know me better.</p>
-            
+
             <div class="about-grid">
                 <div class="about-img-wrapper">
-                  
+
                     <img src="img/irfan.JPG" alt="Ahmed Irfan N portrait">
                 </div>
                 <div class="about-text">
                     <h3>Design driven, detail oriented.</h3>
                     <p>
-                        I’m a creative software developer who loves building clean, practical, and modern applications. Whether it’s a GUI tool, an automation workflow, an AI-powered system, or an experimental utility, I focus on designing solutions that feel smooth, work efficiently, and actually solve real problems.
+                        I’m a creative software developer who loves building clean, practical, and modern applications.
+                        Whether it’s a GUI tool, an automation workflow, an AI-powered system, or an experimental
+                        utility, I focus on designing solutions that feel smooth, work efficiently, and actually solve
+                        real problems.
 
-I’ve developed a strong foundation in Python-based software development — from Tkinter and PyQt6 desktop apps, to automation systems, to intelligent NLP-driven tools. I enjoy exploring new technologies, experimenting with ideas, and pushing myself to build things that are both functional and thoughtfully crafted.
+                        I’ve developed a strong foundation in Python-based software development — from Tkinter and PyQt6
+                        desktop apps, to automation systems, to intelligent NLP-driven tools. I enjoy exploring new
+                        technologies, experimenting with ideas, and pushing myself to build things that are both
+                        functional and thoughtfully crafted.
 
- 
+
                     </p>
                     <p>
-                        When I'm not coding, you can find me hiking in the mountains, reading mangas, or experimenting with new techs.
+                        When I'm not coding, you can find me hiking in the mountains, reading mangas, or experimenting
+                        with new techs.
                     </p>
                     <a href="src/my_resume_irf.pdf" class="btn btn-outline" download>
                         <i class="fas fa-download"></i> Download Resume
@@ -691,46 +972,46 @@ I’ve developed a strong foundation in Python-based software development — fr
             <div class="skills-grid">
                 <!-- Skill 1 -->
                 <a href="/html5">
-                <div class="skill-card">
-                    <i class="fab fa-html5 skill-icon"></i>
-                    <p class="skill-name">HTML5</p>
-                </div>
+                    <div class="skill-card">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <p class="skill-name">HTML5</p>
+                    </div>
                 </a>
                 <!-- Skill 2 -->
                 <a href="/blender">
-                <div class="skill-card">
-                    <img src="img/blender.png" alt="Blender logo" class="skill-icon">
-                    <p class="skill-name">Blender</p>
-                </div>
+                    <div class="skill-card">
+                        <img src="img/blender.png" alt="Blender logo" class="skill-icon">
+                        <p class="skill-name">Blender</p>
+                    </div>
                 </a>
                 <!-- Skill 3 -->
                 <a href="/java">
-                <div class="skill-card">
-                    <i class="fa-brands fa-java skill-icon"></i>
-                    <p class="skill-name">Java</p>
-                </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-java skill-icon"></i>
+                        <p class="skill-name">Java</p>
+                    </div>
                 </a>
                 <!-- Skill 4 -->
                 <a href="/c">
-                <div class="skill-card">
-                    <i class="fa-solid fa-c skill-icon"></i>
-                    <p class="skill-name">C</p>
-                </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-c skill-icon"></i>
+                        <p class="skill-name">C</p>
+                    </div>
                 </a>
                 <!-- Skill 5 -->
                 <a href="/git">
-                <div class="skill-card">
-                    <i class="fab fa-git-alt skill-icon"></i>
-                    <p class="skill-name">Git</p>
-                </div>
+                    <div class="skill-card">
+                        <i class="fab fa-git-alt skill-icon"></i>
+                        <p class="skill-name">Git</p>
+                    </div>
                 </a>
                 <!-- Skill 6 -->
                 <a href="/python">
-                <div class="skill-card">
-                 <i class="fa-brands fa-python skill-icon"></i>
-                  <p class="skill-name">Python</p>
-                </div>
-            </a>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-python skill-icon"></i>
+                        <p class="skill-name">Python</p>
+                    </div>
+                </a>
 
             </div>
         </div>
@@ -754,8 +1035,10 @@ I’ve developed a strong foundation in Python-based software development — fr
                             <span class="tag">distilroberta-base</span>
                         </div>
                         <h3 class="project-title">AI POWERED TASK AUTOMATION</h3>
-                        <p class="project-desc">An intelligent task automation app that converts user input into real actions using transformer-based NLP and a refined PyQt6 interface.</p>
-                        <a href="https://github.com/irfan5122/AI_POWERED_TASK_AUTOMATION" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        <p class="project-desc">An intelligent task automation app that converts user input into real
+                            actions using transformer-based NLP and a refined PyQt6 interface.</p>
+                        <a href="https://github.com/irfan5122/AI_POWERED_TASK_AUTOMATION" class="project-link">View
+                            Project <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
 
@@ -770,8 +1053,12 @@ I’ve developed a strong foundation in Python-based software development — fr
                             <span class="tag">Mysql</span>
                         </div>
                         <h3 class="project-title">MOVIE DATABASE MANAGER</h3>
-                        <p class="project-desc">A Python–Tkinter app with MySQL integration to organize your personal movie and series collection. Features include adding entries with details, viewing records in a scrollable interface, deleting items by serial number, and automatic CSV export on exit.</p>
-                        <a href="https://github.com/irfan5122/MovieDB-Manager" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        <p class="project-desc">A Python–Tkinter app with MySQL integration to organize your personal
+                            movie and series collection. Features include adding entries with details, viewing records
+                            in a scrollable interface, deleting items by serial number, and automatic CSV export on
+                            exit.</p>
+                        <a href="https://github.com/irfan5122/MovieDB-Manager" class="project-link">View Project <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
 
@@ -786,8 +1073,12 @@ I’ve developed a strong foundation in Python-based software development — fr
                             <span class="tag">Selenium</span>
                         </div>
                         <h3 class="project-title">WHATSAPP WEB AUTOMATION</h3>
-                        <p class="project-desc">A Python–Selenium project with a Tkinter GUI built to automate WhatsApp Web. It allows sending multiple messages to any user or group for stress-testing devices and supports setting custom message counts. The tool also saves Chrome user data for one-time login and seamless reuse.</p>
-                        <a href="https://github.com/irfan5122/whatsapp-web-automation" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        <p class="project-desc">A Python–Selenium project with a Tkinter GUI built to automate WhatsApp
+                            Web. It allows sending multiple messages to any user or group for stress-testing devices and
+                            supports setting custom message counts. The tool also saves Chrome user data for one-time
+                            login and seamless reuse.</p>
+                        <a href="https://github.com/irfan5122/whatsapp-web-automation" class="project-link">View Project
+                            <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
             </div>
@@ -811,16 +1102,21 @@ I’ve developed a strong foundation in Python-based software development — fr
                 </div>
                 <div class="form-group">
                     <label for="message" class="form-label">Message</label>
-                    <textarea id="message" rows="5" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
+                    <textarea id="message" rows="5" class="form-textarea" placeholder="Tell me about your project..."
+                        required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
             </form>
 
             <div class="social-links">
-                <a href="https://github.com/irfan5122" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/ahmed-irfan-n/" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/irfan.rch" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="mailto:irfan51229747@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/irfan5122" class="social-link" title="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-irfan-n/" class="social-link" title="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/irfan.rch" class="social-link" title="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="mailto:irfan51229747@gmail.com" class="social-link" title="Email"><i
+                        class="fas fa-envelope"></i></a>
             </div>
         </div>
     </section>
@@ -832,6 +1128,39 @@ I’ve developed a strong foundation in Python-based software development — fr
     </footer>
 
     <script>
+        // 0. Dark Mode Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const htmlElement = document.documentElement;
+
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        htmlElement.setAttribute('data-theme', currentTheme);
+
+        // Update icon based on current theme
+        if (currentTheme === 'dark') {
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+        }
+
+        // Toggle theme
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+
+            // Update icon
+            if (newTheme === 'dark') {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            } else {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            }
+        });
+
         // 1. Mobile Menu Toggle
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");
@@ -872,11 +1201,9 @@ I’ve developed a strong foundation in Python-based software development — fr
         window.addEventListener('scroll', () => {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
-                navbar.style.boxShadow = "var(--shadow-sm)";
-                navbar.style.background = "rgba(255, 255, 255, 0.95)";
+                navbar.style.boxShadow = "var(--shadow-md)";
             } else {
-                navbar.style.boxShadow = "none";
-                navbar.style.background = "rgba(255, 255, 255, 0.9)";
+                navbar.style.boxShadow = "var(--shadow-sm)";
             }
         });
     </script>
@@ -884,33 +1211,34 @@ I’ve developed a strong foundation in Python-based software development — fr
 
 
     <script>
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwgRFzHx7d-mTCWZ515XJABszrHmdBDA-m7vua1G015LlC2WmMiwLAhonx_vl36vIaeMw/exec"; 
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwgRFzHx7d-mTCWZ515XJABszrHmdBDA-m7vua1G015LlC2WmMiwLAhonx_vl36vIaeMw/exec";
 
-document.getElementById("contactForm").addEventListener("submit", async (e) => {
-    e.preventDefault();
+        document.getElementById("contactForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
 
-    const data = { name, email, message };
+            const data = { name, email, message };
 
-    try {
-        await fetch(SCRIPT_URL, {
-            method: "POST",
-            mode: "no-cors",
-            body: JSON.stringify(data)
+            try {
+                await fetch(SCRIPT_URL, {
+                    method: "POST",
+                    mode: "no-cors",
+                    body: JSON.stringify(data)
+                });
+
+                alert("Message sent successfully!");
+                document.getElementById("contactForm").reset();
+
+            } catch (error) {
+                alert("Failed to send message. Try again.");
+                console.error(error);
+            }
         });
-
-        alert("Message sent successfully!");
-        document.getElementById("contactForm").reset();
-
-    } catch (error) {
-        alert("Failed to send message. Try again.");
-        console.error(error);
-    }
-});
-</script>
+    </script>
 
 </body>
+
 </html>
